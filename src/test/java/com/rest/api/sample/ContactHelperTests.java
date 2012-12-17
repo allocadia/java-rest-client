@@ -1,4 +1,4 @@
-package com.rest.api.samples.tests;
+package com.rest.api.samples;
 
 import junit.framework.Assert;
 import com.rest.api.samples.models.*;
