@@ -5,33 +5,40 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>com.allocadia</groupId>
+        <artifactId>allocadia-parent</artifactId>
+        <version>66.0-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
+
     <groupId>com.rest</groupId>
     <artifactId>api-client</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
-	<dependencies>
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.2.2</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.10</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>	
+    <dependencies>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
 
-	<distributionManagement>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <distributionManagement>
         <repository>
             <id>thirdparty</id>
-			<url>http://54.245.234.188:8081/nexus/content/repositories/thirdparty/</url>
+            <url>http://ec2-54-245-234-188.us-west-2.compute.amazonaws.com:8081/nexus/content/repositories/thirdparty/
+            </url>
         </repository>
         <snapshotRepository>
             <id>thirdparty</id>
-			<url>http://54.245.234.188:8081/nexus/content/repositories/thirdparty/</url>
+            <url>http://ec2-54-245-234-188.us-west-2.compute.amazonaws.com:8081/nexus/content/repositories/thirdparty/
+            </url>
         </snapshotRepository>
     </distributionManagement>
 </project>
